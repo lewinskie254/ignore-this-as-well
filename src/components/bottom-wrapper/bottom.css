@@ -1,0 +1,38 @@
+.bottom {
+  background-color: var(--color-1-light);
+}
+
+.bottom .container,
+.bottom-wrapper,
+.bottom-heading,
+.bottom-heading h2,
+.bottom-button {
+  background-color: transparent;
+}
+
+.bottom-wrapper {
+  display: flex;
+  column-gap: 1rem;
+  margin-block: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
+    margin-block: 2rem;
+  }
+
+  .bottom-heading {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .bottom-button {
+    margin: auto;
+  }
+}
